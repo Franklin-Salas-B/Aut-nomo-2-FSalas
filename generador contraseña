@@ -1,0 +1,17 @@
+## generador de contraseña
+import secrets
+import string
+
+def generar_contraseña(longitud=12):
+Args:
+longitud (int) : la longitud de la contraseña.
+returns:
+str : La contraseña generada
+caracteres = s.ascii_letters + s.digits + s.punctuation
+contraseña = ´´. join(secrets.choice(caracteres) for_in range(longitud))
+return contraseña
+
+longitud = int(input("longitud contraseña"))
+contraseña = generar_contraseña(longitud)
+print("contraseña generada: ", contraseña)
+
